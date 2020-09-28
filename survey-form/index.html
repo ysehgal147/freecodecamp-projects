@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Your Ratings on India's Fight Against COVID-19</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter Name" />
+      <br />
+      <label for="email" id="email-label">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter Email" />
+      <br />
+      <label for="number" id="number-label">Number</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="0"
+        max="100"
+        placeholder="Enter Number"
+      />
+      <br />
+      <label for="dropdown" id="dropdown-label">Performance Index</label>
+      <select id="dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Satisfactory">Satisfactory</option>
+        <option value="Bad">Bad</option>
+        <option value="Worst">Worst</option>
+      </select>
+      <div>
+        <label for="improvement" id="improvement">Improvement</label>
+        <input
+          type="radio"
+          id="testing"
+          name="improvement"
+          value="testing"
+          checked
+        />
+        <label for="testing">Testing</label>
+        <input
+          type="radio"
+          id="quarantine"
+          name="improvement"
+          value="quarantine"
+        />
+        <label for="quarantine">Quarantine</label>
+        <input
+          type="radio"
+          id="social-distancing"
+          name="improvement"
+          value="social-distancing"
+        />
+        <label for="social-distancing">Social Distancing</label>
+      </div>
+    <textarea id="story" name="story" rows="5" cols="33">Subjective Reviews</textarea>
+    <input type="submit" value="Send Request">
+    </form>
+  </body>
+</html>
